@@ -1,0 +1,114 @@
+/* This is the stylesheet for the index.html page */
+
+body {
+    background-color: #d3d3d3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+header, footer {background-color: #c0baba;}
+
+h1 {
+    font-size: 3vw; 
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-top: 5%;;
+}
+
+article p::first-letter {
+    font-size: 150%;
+    color: #008b8b;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* The navigation bar is styled with pseudo-class and a sticky position at the top */
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem;
+    color: #000000;
+}
+
+nav a:hover {
+    background-color: #008b8b;
+    border-radius: 6px;
+}
+
+nav.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #c0baba;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+/*The promotional banner has a pseudo-class effect and links to 'Services.html' list */
+
+#banner {
+    border: 0.5rem solid #9a3f0a; border-radius: 6px; border-style: ridge;
+}
+
+#banner:hover {
+    border:0.5rem solid #9a3f0a;
+    border-radius: 6px;
+    border-style: ridge;
+    text-shadow: 5px 5px 5px #3b3939;
+    transition: 0.5s;
+}
+
+
+/* I use flexbox and a breakpoint at 768 pixel for a better user xp on mobile devices */
+
+@media(min-width: 680px) {
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    gap: 4%;
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+footer div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
